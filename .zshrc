@@ -28,7 +28,7 @@ BULLETTRAIN_GIT_BG="black"
 # HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
-DISABLE_AUTO_UPDATE="true"
+#DISABLE_AUTO_UPDATE="true"
 
 
 # Uncomment the following line to change how often to auto-update (in days).
@@ -67,9 +67,11 @@ plugins=(
   archlinux
   git
   extract
+  fedora
   per-directory-history
 )
 
+source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
@@ -106,3 +108,7 @@ if [[ ! -d $ZSH_CACHE_DIR ]]; then
 fi
 
 source $ZSH/oh-my-zsh.sh
+alias mss="make start_server"
+alias mdb="make -j debug"
+alias mj="make -j"
+alias mr="make -j run"
