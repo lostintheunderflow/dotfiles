@@ -1,12 +1,12 @@
 #Default account
-source lostunderflow
+source corp
 set move = no
 set imap_keepalive = 900
 
 set sort=threads
 set sort_browser=date
 set sort_aux=reverse-last-date-received
-
+set editor=vim
 # Gmail-style keyboard shortcuts
 macro index,pager ga "<change-folder>=[Gmail]/All<tab><enter>" "Go to all mail"
 macro index,pager gi "<change-folder>=INBOX<enter>" "Go to inbox"
