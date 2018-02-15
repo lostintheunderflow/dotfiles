@@ -77,7 +77,6 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-export PATH/usr/local/bin/git-fat:$PATH
 export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
 
 # export MANPATH="/usr/local/man:$MANPATH"
