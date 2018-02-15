@@ -68,7 +68,6 @@ plugins=(
   git
   extract
   fedora
-  per-directory-history
 )
 
 source $ZSH/oh-my-zsh.sh
