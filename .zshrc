@@ -81,11 +81,7 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
 
 #Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
-else
-  export EDITOR='mvim'
-fi
+export EDITOR='vim'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -112,3 +108,6 @@ alias mss="make start_server"
 alias mdb="make -j debug"
 alias mj="make -j"
 alias mr="make -j run"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
