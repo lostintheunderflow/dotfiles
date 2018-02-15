@@ -1,0 +1,8 @@
+set folder="/home/mtoal/corp"
+set sendmail = "/usr/bin/msmtp" 
+set spoolfile = "+INBOX"
+mailboxes "+INBOX"
+
+set from="michael.toal@intel.com"
+set realname='Michael Toal' 
+set my_hdr From: "Michael Toal"

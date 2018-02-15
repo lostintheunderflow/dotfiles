@@ -1,0 +1,21 @@
+[general]
+accounts = corp
+# Path to file with arbitrary Python code to be loaded
+pythonfile = ~/.offlineimap.py
+
+[Account corp]
+localrepository = Local
+remoterepository = Remote
+
+[Repository Local]
+type = Maildir
+localfolders = ~/corp
+
+[Repository Remote]
+type = IMAP
+remotehost = localhost
+remoteport = 1143
+remoteuser = GER\mtoal
+remotepasseval = get_pass("corp")
+ssl = no
+folderfilter = lambda folder: folder in ['INBOX', 'Sent']

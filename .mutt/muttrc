@@ -1,5 +1,5 @@
 #Default account
-source corp
+source offcorp
 set move = no
 set imap_keepalive = 900
 
@@ -8,11 +8,9 @@ set sort_browser=date
 set sort_aux=reverse-last-date-received
 set editor=vim
 # Gmail-style keyboard shortcuts
-macro index,pager ga "<change-folder>=[Gmail]/All<tab><enter>" "Go to all mail"
-macro index,pager gi "<change-folder>=INBOX<enter>" "Go to inbox"
-macro index,pager gs "<change-folder>=[Gmail]/Starred<enter>" "Go to starred messages"
-macro index,pager gd "<change-folder>=[Gmail]/Drafts<enter>" "Go to drafts"
-macro index,pager e "<enter-command>unset trash\n <delete-message>" "Gmail archive message" # different from Gmail, but wanted to keep "y" to show folders.
+macro index,pager gi "<change-folder>=INBOX<enter>"
+macro index,pager gs "<change-folder>=Sent<enter>" 
+macro index,pager gd "<change-folder>=Drafts<enter>" "Go to drafts"
 # Macros for switching accounts
 macro index <f2> '<sync-mailbox><enter-command>source ~/.mutt/lostunderflow<enter><change-folder>!<enter>'
 macro index <f3> '<sync-mailbox><enter-command>source ~/.mutt/toalorama<enter><change-folder>!<enter>'
