@@ -28,8 +28,7 @@ BULLETTRAIN_GIT_BG="black"
 # HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
-#DISABLE_AUTO_UPDATE="true"
-
+# DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
 # export UPDATE_ZSH_DAYS=13
@@ -41,7 +40,7 @@ BULLETTRAIN_GIT_BG="black"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
@@ -64,15 +63,22 @@ BULLETTRAIN_GIT_BG="black"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  archlinux
-  git
-  extract
-  fedora
+    colored-man-pages
+    command-not-found
+    compleat
+    cp
+    history
+    tmux
+    git
+    extract
+    history-substring-search
 )
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+export PATH/usr/local/bin/git-fat:$PATH
+export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
