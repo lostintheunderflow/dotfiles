@@ -1,5 +1,10 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+#fix the god damb history
+
+mv ~/.zsh_history ~/.zsh_history_bad
+strings ~/.zsh_history_bad > ~/.zsh_history
+fc -R ~/.zsh_history
 
 # Path to your oh-my-zsh installation.
 ZSH=/usr/share/oh-my-zsh/
