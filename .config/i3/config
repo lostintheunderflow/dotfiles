@@ -254,6 +254,7 @@ assign [class="Evolution"] $workspace4
 
 #startup
 exec_always --no-startup-id /home/mtoal/.screenlayout/4screens.sh
+exec --no-startup-id compton --config ~/.config/.compton.conf
 exec --no-startup-id atom
 exec --no-startup-id firefox
 exec --no-startup-id terminology
@@ -261,7 +262,6 @@ exec_always --no-startup-id feh --randomize --bg-fill ~/Pictures/wallpapers/*
 exec --no-startup-id nm-applet
 
 
-exec --no-startup-id compton --config ~/.config/.compton.conf
 exec --no-startup-id davmail
 
 gaps inner 10
