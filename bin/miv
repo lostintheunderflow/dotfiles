@@ -1,0 +1,4 @@
+#!/bin/bash
+i3-msg "exec newvim $1"
+sleep 0.5
+i3-msg "move container to workspace \"3  \"; workspace \"3  \";"
