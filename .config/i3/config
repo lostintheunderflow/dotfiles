@@ -257,6 +257,7 @@ assign [class="Evolution"] $workspace4
 
 for_window [class="Git-gui"] floating enable
 for_window [class="push_setup"] floating enable
+for_window [class="Pinentry-gtk-2"] floating enable
 
 
 #startup
