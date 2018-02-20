@@ -28,7 +28,7 @@ status_path = "/home/mtoal/.config/vdirsyncer/status/"
 [pair calendar]
 a = "calendar_local"
 b = "calendar_remote"
-collections = ["calendar", "holidays", "birthdays"]
+collections = ["calendar"]
 conflict_resolution = "a wins"
 
 [storage calendar_local]
@@ -38,12 +38,12 @@ fileext = ".ics"
 
 [storage calendar_remote]
 type = "caldav"
-url = "http://localhost:1080/users/michael.toal@intel.com/calendar"
-#auth = digest
+url = "http://localhost:1180/users/michael.toal@intel.com/calendar"
+#auth = "digest"
 #verify = /etc/ssl/local/example.org.pem
 password.fetch = ["command", "pass", "corp"]
-username = "GER\\mtoal"
-#username = "michael.toal@intel.com"
+#username = "GER\\mtoal"
+username = "michael.toal@intel.com"
 
 
 
