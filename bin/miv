@@ -1,5 +1,7 @@
-#!/bin/bash
-i3-msg "exec newvim $1"
+#!/bin/bash 
+FILE=`realpath $1`
+echo $FILE
+i3-msg "exec newvim $FILE"
 sleep 0.5
 i3-msg "move container to workspace \"3  \"; workspace \"3  \";"
-i3-msg "title_format $1"
+i3-msg "title_format $FILE"
