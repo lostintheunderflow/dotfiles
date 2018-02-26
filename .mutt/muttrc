@@ -41,3 +41,5 @@ color index_number red default
 # Message size, %c %l
 color index_size cyan default
 alias lost Lost  <lostintheunderflow@gmail.com>
+set mime_forward
+set mime_forward_rest=yes
