@@ -1,0 +1,14 @@
+[calendars]
+[[corp]]
+    path = ~/.calendars/calendar
+    readonly = True
+    color = dark red
+[locale]
+
+local_timezone= Europe/Dublin
+default_timezone= Europe/Dublin
+timeformat = %H:%M
+dateformat = %d/%m/%Y
+longdateformat = %d/%m/%Y
+datetimeformat = %d/%m/%Y %H:%M
+longdatetimeformat = %d/%m/%Y %H:%M

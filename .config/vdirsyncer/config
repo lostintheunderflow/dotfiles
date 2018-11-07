@@ -1,0 +1,52 @@
+
+
+[general]
+# A folder where vdirsyncer can store some metadata about each pair.
+status_path = "/home/mtoal/.config/vdirsyncer/status/"
+
+# CARDDAV
+#[pair contacts]
+#a = "contacts_local"
+#b = "contacts_remote"
+#collections = ["family", "friends"]
+#conflict_resolution = "a wins"
+
+#[storage contacts_local]
+#type = "filesystem"
+#path = "~/.contacts/"
+#fileext = ".vcf"
+
+#[storage contacts_remote]
+#type = "carddav"
+#url = "https://localhost/card.php/addressbooks/mtoal/"
+#auth = digest
+#verify = /etc/ssl/local/example.org.pem
+#username = "GER\\mtoal"
+#password.fetch = ["command", "pass", "corp"]
+
+# CALDAV
+[pair calendar]
+a = "calendar_local"
+b = "calendar_remote"
+collections = ["calendar"]
+conflict_resolution = "a wins"
+
+[storage calendar_local]
+type = "filesystem"
+path = "~/.calendars/"
+fileext = ".ics"
+
+[storage calendar_remote]
+type = "caldav"
+url = "http://localhost:1180/users/michael.toal@intel.com/calendar"
+#auth = "digest"
+#verify = /etc/ssl/local/example.org.pem
+password.fetch = ["command", "pass", "corp"]
+#username = "GER\\mtoal"
+username = "michael.toal@intel.com"
+
+
+
+
+
+

@@ -1,5 +1,10 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+#fix the god damb history
+
+mv ~/.zsh_history ~/.zsh_history_bad
+strings ~/.zsh_history_bad > ~/.zsh_history
+fc -R ~/.zsh_history
 
 # Path to your oh-my-zsh installation.
 ZSH=/usr/share/oh-my-zsh/
@@ -28,8 +33,7 @@ BULLETTRAIN_GIT_BG="black"
 # HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
-DISABLE_AUTO_UPDATE="true"
-
+# DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
 # export UPDATE_ZSH_DAYS=13
@@ -64,14 +68,21 @@ DISABLE_AUTO_UPDATE="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  archlinux
-  git
-  extract
-  per-directory-history
+    colored-man-pages
+    command-not-found
+    compleat
+    cp
+    history
+    tmux
+    git
+    extract
+    history-substring-search
 )
 
+source $ZSH/oh-my-zsh.sh
 
 # User configuration
+export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -79,11 +90,7 @@ plugins=(
 # export LANG=en_US.UTF-8
 
 #Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
-else
-  export EDITOR='mvim'
-fi
+export EDITOR='vim'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -106,3 +113,10 @@ if [[ ! -d $ZSH_CACHE_DIR ]]; then
 fi
 
 source $ZSH/oh-my-zsh.sh
+alias mss="make start_server"
+alias mdb="make -j debug"
+alias mj="make -j"
+alias mr="make -j run"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+

@@ -1,0 +1,4 @@
+
+Add the following using crontab -e
+
+*/3 * * * * export DISPLAY=:0 && ~/.mailrun.sh

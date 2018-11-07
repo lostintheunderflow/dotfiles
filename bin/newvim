@@ -1,0 +1,3 @@
+#! /bin/bash
+echo terminology -e vim $1
+terminology -e vim $1
